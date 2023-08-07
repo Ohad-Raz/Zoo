@@ -1,38 +1,61 @@
 body {
   margin: 0;
+  overflow: hidden;
 }
 
-.container {
+.containerGrid {
+  display: flex;
+  flex-wrap: wrap;
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-columns: 13% 29% 29% 29%;
+  grid-template-rows: 8% 21% 21% 21% 21% 8%;
   grid-template-areas:
     "headr headr headr headr"
-    "sidebar main main main"
-    "sidebar main main main"
+    "sidebar  main main main"
+    "sidebar  main main main"
+    "sidebar  main main main"
     "sidebar main main main"
     "footr footr footr footr";
 }
 
 .headr {
-  background-color: aqua;
+  background-color: #90d5ec;
+  background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
   grid-area: headr;
 }
-.sidebar {
-  background-color: green;
-  grid-area: sidebar;
-}
 .main {
-  background-color: black;
+  background-image: url(Photos/safaryBG.jpg);
+  grid-area: sidebar;
+  background-repeat: no-repeat;
+  background-size: cover;
   grid-area: main;
 }
-.footr {
-  background-color: red;
-  grid-area: footr;
+
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  background-color: #90d5ec;
+  background: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
+  grid-area: sidebar;
 }
 
+.footr {
+  background-color: #90d5ec;
+  background-image: linear-gradient(65deg, #90d5ec 0%, #fc575e 74%);
+  grid-area: footr;
+}
+.navbar {
+  background-color: #90d5ec;
+  background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
+}
+
+.IconNav {
+  width: 36px;
+  height: 36px;
+}
 @media screen and (max-width: 600px) {
   .container {
     grid-template-areas:
@@ -40,9 +63,25 @@ body {
       "main main main main"
       "main main main main"
       "main main main main"
+      "main main main main"
       "footr footr footr footr";
+  }
+  .main {
+    background-image: url(Photos/safaryBG.jpg);
+    grid-area: sidebar;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: main;
   }
   .sidebar {
     display: none;
+  }
+  .IconNav {
+    width: 36px;
+    height: 36px;
+  }
+  body {
+    background-color: #90d5ec;
+    background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
   }
 }
