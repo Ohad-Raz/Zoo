@@ -1,0 +1,42 @@
+@media screen and (max-width: 1250px) {
+  .containerGrid {
+    grid-template-columns: 31% 34.5% 34.5%;
+    grid-template-rows: 8% 15% 15% 15% 15% 15% 15% 8%;
+    grid-template-areas:
+      "headr headr headr headr"
+      "sidebar main main main"
+      "sidebar main main main"
+      "sidebar main main main"
+      "sidebar main main main"
+      "sidebar main main main"
+      "sidebar main main main"
+      "footr footr footr footr";
+  }
+
+  .main {
+    background-image: url(Photos/safaryBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: flex-start;
+  }
+  .card {
+    width: 32vw;
+  }
+
+  .CardImg1,
+  .CardImg2,
+  .CardImg3,
+  .CardImg4,
+  .CardImg5,
+  .CardImg6,
+  .CardImg7 {
+    height: 26vh;
+    width: 32vw;
+  }
+}

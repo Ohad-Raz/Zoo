@@ -1,0 +1,31 @@
+@media screen and (max-width: 290px) {
+  .Fox {
+    margin-top: 80%;
+  }
+  .IconNav {
+    width: 4vh;
+    height: 4vh;
+  }
+  .navbar {
+    font-size: small;
+  }
+  .Turtle {
+    margin-bottom: 50%;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .Fox {
+    margin-top: 120%;
+  }
+  .IconNav {
+    width: 2vh;
+    height: 2vh;
+  }
+  .navbar {
+    font-size: small;
+  }
+  .Turtle {
+    margin-bottom: 75%;
+  }
+}
